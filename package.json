@@ -1,0 +1,23 @@
+{
+  "name": "cookingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~4.9.2",
+    "mysql": "~2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshanad/cookingapp.git"
+  },
+  "author": "Roshana Devkota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roshanad/cookingapp/issues"
+  },
+  "homepage": "https://github.com/roshanad/cookingapp#readme"
+}
