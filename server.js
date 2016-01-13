@@ -35,7 +35,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/load',function(req,res){
-  connection.query("SELECT * from cooking_info",function(err,rows){
+  connection.query("SELECT * from user_info",function(err,rows){
     if(err)
       {
         console.log("Problem with MySQL"+err);
