@@ -2,68 +2,59 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cooking app</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cooking app</title>
 
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="public/css/styles.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="core.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="core.js"></script>
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Homepage</a>
-                    </li>
-                    <li>
-                        <a href="#">All Recipes</a>
-                    </li>
-                    <li>
-                        <a href="#">Foodstagram</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!-- Page Content -->
-
-    <body>
-      <div class="row">
-        <div id="container" ng-app='cooking' ng-controller='cooking_data_control'>
-          <div ng-repeat="data in profile_pictures">
-            <div class=".col-sm-6 .col-md-5 .col-lg-6" class="datapic">
-              <h4>TEST IMAGES</h4><hr>
-              <p>
-              </p>
-              <img src="{{data.profile_picture}}" class="circular">
-            </div>
-          </div>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Homepage</a>
+          </li>
+          <li>
+            <a href="#">All Recipes</a>
+          </li>
+          <li>
+            <a href="#/create">Recipe Book</a>
+          </li>
+          <li>
+            <a href="#/foodstagram">Foodstagram</a>
+          </li>
+        </ul>
       </div>
-    </body>
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- Page Content -->
+  <div class="col-lg-12">
+    <h1 class="page-header"></h1>
+  </div>
+  <div class="container" ng-app='cooking' ng-controller='cooking_data_control'>
+    <div class="row" >
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="data in profile_pictures">
+        <a href="{{data.profile_picture}}"> Click here</a>
+        <img class="circular" src="{{data.profile_picture}}">
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </body>
-
 </html>

@@ -1,7 +1,4 @@
-body {
-  margin-top: 10px;
-  background-color: lemonchiffon;
-}
+
 
 .datapic {
   background-color:#eee;
@@ -21,3 +18,13 @@ body {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
+
+  video, source {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 3px;
+}
+  .convertedGif {
+
+  }
