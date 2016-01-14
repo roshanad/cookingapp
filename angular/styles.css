@@ -1,0 +1,89 @@
+body {
+    padding-top: 70px;
+    background-color: #c2c2c2;
+}
+.navbar-fixed-top {
+  margin-bottom: 70px;
+}
+
+.thumb {
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.footer-center {
+  text-align: center;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 300px;
+}
+
+.img-rectangle {
+  width: 250px;
+  height: 200px;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+
+hr {border-color:#ececec;}
+button {
+ outline: 0;
+}
+textarea {
+ resize: none;
+ outline: 0;
+}
+.panel .btn i,.btn span{
+ color:#666666;
+}
+.panel .panel-heading {
+ background-color:#ffffff;
+ font-weight:700;
+ font-size:16px;
+ color:#262626;
+ border-color:#ffffff;
+}
+.panel .panel-heading a {
+ font-weight:400;
+ font-size:11px;
+}
+.panel .panel-default {
+ border-color:#cccccc;
+}
+.panel .panel-thumbnail {
+ padding:0;
+}
+.panel .img-circle {
+ width:50px;
+ height:50px;
+}
+.list-group-item:first-child,.list-group-item:last-child {
+ border-radius:0;
+}
+h3,h4,h5 {
+ border:0 solid #efefef;
+ border-bottom-width:1px;
+ padding-bottom:10px;
+}
+
+.footer-bottom {
+  width: 100%;
+}
+
+/* end theme */
+
+/* template layout*/
+#subnav {
+ position:fixed;
+ width:100%;
+}
+
+@media (max-width: 768px) {
+ #subnav {
+  padding-top: 6px;
+ }
+}
+
+#main {
+ padding-top:120px;
+}

@@ -7,9 +7,9 @@ var app             =         express();
 */
 var connection      =         mysql.createConnection({
         host        :         "localhost",
-        user        :         "two_way_demo",
+        user        :         "cookingapp",
         password    :         "abc",
-        database     :         "two_way_demo"
+        database     :        "cookingapp"
 });
 
 connection.connect(function(error){
@@ -35,7 +35,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/load',function(req,res){
-  connection.query("SELECT * from user_info",function(err,rows){
+  connection.query("SELECT * from cookingapp",function(err,rows){
     if(err)
       {
         console.log("Problem with MySQL"+err);

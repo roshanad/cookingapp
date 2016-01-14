@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app='cooking'>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
   <title>Cooking app</title>
 
-  <!-- Custom CSS -->
-  <link href="public/css/styles.css" rel="stylesheet">
+
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <!-- Custom CSS -->
+
   <script src="app.js"></script>
   <script src="core.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -41,20 +45,36 @@
     </div>
     <!-- /.container -->
   </nav>
+
   <!-- Page Content -->
-  <div class="col-lg-12">
-    <h1 class="page-header"></h1>
-  </div>
-  <div class="container" ng-app='cooking' ng-controller='cooking_data_control'>
+  <div class="container" ng-controller='cooking_data_control'>
     <div class="row" >
-      <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="data in profile_pictures">
-        <a href="{{data.profile_picture}}"> Click here</a>
-        <img class="circular" src="{{data.profile_picture}}">
+      <div class="col-sm-4 col-xs-4 col-xs-6 thumb" ng-repeat="data in profile_pictures">
+        <a class="thumbnail" href="{{data.video_url}}">
+          <img class="img-responsive img-rectangle" src="{{data.profile_picture}}">
+          <div>
+            <p>{{data.title}}</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-</body>
-</html>
+    <!-- Footer -->
+    <hr>
+
+    <footer>
+      <div class="row footer-bottom">
+        <div class="col-lg-12 footer-center">
+          <p>Copyright &copy; WDI Project 4</p>
+        </div>
+      </div>
+
+      <!-- Boostrap watch template -->
+
+    </footer>
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+  </html>
